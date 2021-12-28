@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            background: url("https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background.jpg");
+            background-size: cover;
+        }
+        #text {
+            height: 50px;
+            border-radius: 5px;
+            padding: 4px;
+            border: solid thin #aaa;
+            width: 100%;
+        }
+        #button {
+            padding: 10px;
+            width: 100px;
+            color: white;
+            background-color: orange;
+            border: none
+        }
+        #box {
+            background-color: none;
+            margin: auto;
+            /* width: 300px; */
+            width: 500px;
+            padding: 20px;
+            margin-top: 80px;
+        }
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="box">
+        <h2>
+            <div style="font-size: 20px;margin: 10px;color: black;text-align:center">Signup</div>
+        </h2>
+        <!-- <form method="post" style="text-align:center">
+            <b>Username : </b><input type="text" name="user_name" placeholder="username"><br><br>
+            <b>Password : </b><input type="password" name="password" placeholder="password"><br><br>
+            <input id="button" type="submit" value="Signup"><br><br>
+            <b>Already have an account? Login</b>
+            <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a><br><br>
+        </form> -->
+        <div class="form">
+            <div class="form-group">
+                <label for="fulln">Full name</label>
+                <input type="text" name="fullname" id="fulln" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of birth</label>
+                <input type="date" name="dob" id="dob" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="un">Username</label>
+                <input type="text" name="user_name" id="un" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="pw">Password</label>
+                <input type="password" name="password" id="pw" class="form-control">
+            </div>
+            <button class="btn btn-success d-block mx-auto">Register</button>
+        </div>
+    </div>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    
+</body>
+
+</html>
